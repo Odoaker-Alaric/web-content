@@ -142,7 +142,7 @@ a uložíme si ho do lokální proměnné ve `www/index.php` a aplikaci spustím
 
 /--php
 $container = require __DIR__ . '/../app/bootstrap.php';
-$container->getService('application')->run();
+$container->getByType('Nette\Application\Application')->run();
 \--
 
 To je vše.
